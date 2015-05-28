@@ -7,7 +7,7 @@
 
 int main()
 {
-struct dane tab = create(ROZMIAR_N,ROZMIAR_M);
+struct dane trab = create(ROZMIAR_N,ROZMIAR_M);
 int wypelnij_n, wypelnij_m;
 for(wypelnij_n=0; wypelnij_n<tab.wymiar_n; wypelnij_n++)
   {
