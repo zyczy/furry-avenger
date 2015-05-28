@@ -3,7 +3,7 @@
 #include "header.h"
 #include <unistd.h>
 #define ROZMIAR_N 22
-#define ROZMIAR_M 80
+#define ROZMIAR_M 88
 
 int main()
 {
@@ -18,7 +18,7 @@ for(wypelnij_n=0; wypelnij_n<tab.wymiar_n; wypelnij_n++)
   }
 FILE * plik;
 if ((plik = fopen("gra_in.txt", "r")) == NULL)
-  { 
+  {
   printf("Nie udalo siê otworzyc pliku.\n");
   return 0;
   }
@@ -47,7 +47,7 @@ print_x(&tab);
 char znak1;
 znak1 = getchar();
 if(znak1!='k')
-  {  
+  {
   char znak;
   while(znak!='k')
     {
@@ -85,7 +85,7 @@ if(znak1!='k')
       }
     int c,d;
     for(c=0; c<ROZMIAR_N; c++)
-      {  
+      {
       for(d=0; d<ROZMIAR_M; d++)
 	{
 	if((tab.wsk)[c][d]==1)    //sprawdzam czy kolejne komorki sa zywe
@@ -107,7 +107,7 @@ if(znak1!='k')
     system("clear");
     print_x(&tab);
     znak=getchar();
-    
+
     }
   }
 
@@ -133,7 +133,7 @@ for(x=0; x<ROZMIAR_N; x++)
 if(fclose(plik2))
   {
   printf("Nie moge zamknac pliku!\n");
-  return 0;    
+  return 0;
   }
 return 0;
 }
