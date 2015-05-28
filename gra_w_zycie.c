@@ -3,7 +3,7 @@
 #include "header.h"
 #include <unistd.h>
 #define ROZMIAR_N 22
-#define ROZMIAR_M 80
+#define ROZMIAR_M 88
 
 int main()
 {
@@ -16,7 +16,7 @@ for(wypelnij_n=0; wypelnij_n<tab.wymiar_n; wypelnij_n++)
     (tab.wsk)[wypelnij_n][wypelnij_m]=0;
     }
   }
-FILE * plik;
+FILE * pluuuuuk;
 if ((plik = fopen("gra_in.txt", "r")) == NULL)
   { 
   printf("Nie udalo siê otworzyc pliku.\n");
